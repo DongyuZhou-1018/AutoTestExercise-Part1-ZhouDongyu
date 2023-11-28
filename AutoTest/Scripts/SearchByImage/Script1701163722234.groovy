@@ -16,68 +16,79 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
-WebUI.openBrowser()
+WebUI.openBrowser('')
+
 WebUI.navigateToUrl('https://www.baidu.com/')
 
 WebUI.takeScreenshot()
 
-WebUI.clickImage(findTestObject('span.soutu-btn'))
+WebUI.click(findTestObject('Object Repository/Page_/span__soutu-btn'))
 
 WebUI.takeScreenshot()
 
-WebUI.clickImage(findTestObject('input.upload-pic'))
+String picPath = RunConfiguration.getProjectDir() + '\\Test Cases\\testData\\cartoon.jpg'
 
-WebUI.takeScreenshot()
-
-WebUI.setText(findTestObject(null), 'C:\\Test Cases\\testData\\test.jpg')
-
-WebUI.takeScreenshot()
-
-WebUI.sendKeys(findTestObject(null), 'ENTER')
+WebUI.uploadFile(findTestObject('Object Repository/Page_/input__upload-pic'), picPath)
 
 WebUI.takeScreenshot()
 
 WebUI.waitForPageLoad(10)
 
-WebUI.takeScreenshot()
-
+//get the sessionid of the original search result page
 String url = WebUI.getUrl()
 
-String[] str = searchResultTmp.split('&')
+WS.comment(url)
+
+String[] str = url.split('&')
 
 String[] str2 = []
 
-String sessionId
-//get the sessionid of the original search result page
-for (int i = 0; i < str.length(); i++) {
+String sessionId = ''
+
+for (int i = 0; i < str.length; i++) {
+    WS.comment(str[i])
+
     str2 = (str[i]).split('=')
 
     if ((str2[0]) == 'session_id') {
-        sessionId = (str[1])
+        sessionId = (str2[1])
+
+        WS.comment(sessionId)
+
+        break
     }
-    
-    break
 }
 
+WS.comment(sessionId)
+
 //get specified VISITRESULT
-File newFile = new File('testData/config.txt')
+File newFile = new File('Test Cases/testData/config.txt')
 
 String searchResultTmp = newFile.text
+
+WS.comment(searchResultTmp)
 
 int searchResultItem = 0
 
 if (searchResultTmp != '') {
     String[] searchResult = searchResultTmp.split('=')
 
-    searchResultItem = Integer.parseInt((searchResult[1]))
-	//open the specified result item
-    WebUI.navigateToUrl('https://graph.baidu.com/pcpage/similar?carousel=503&entrance=GENERAL&extUiData%5BisLogoShow%5D=1&image=http%3A%2F%2Fmms0.baidu.com%2Fit%2Fu%3D13389876,3136556651%26fm%3D253%26app%3D138%26f%3DJPEG%3Fw%3D250%26h%3D250&index=' + 
-		searchResultItem.toString() + '&inspire=general_pc&next=2&originSign=126be33fdbccc632dcc4401701164678&page=1&render_type=carousel&searchItemPageURL14977701778980248844&shituToken=5540b9&sign=126be33fdbccc632dcc4401701164678&srcp=crs_pc_similar&tpl_from=pc')
-	WebUI.takeScreenshot()
-}
+    searchResultItem = Integer.parseInt((searchResult[1]).replace('"', ''))
 
-String searchItemPageURL = WebUI.getUrl()
-//assert sessionid is same as the original search result page
-WS.verifyMatch(searchItemPageURL, '.*&session_id=' + sessionId + '.*', true)
+    WS.comment(searchResultItem.toString())
+
+    //Click the sepcified item
+    WebUI.click(findTestObject('Object Repository/Page_/span__general-imgcol-item-bg graph-imgbg-fff', [('index') : searchResultItem]))
+
+    WebUI.takeScreenshot()
+
+    //assert sessionid is same as the original search result page
+    String searchItemPageURL = WebUI.getUrl()
+
+    WS.verifyMatch(searchItemPageURL, ('.*&session_id=' + sessionId) + '.*', true)
+} else {
+    WS.comment('No index specified!')
+}
 
