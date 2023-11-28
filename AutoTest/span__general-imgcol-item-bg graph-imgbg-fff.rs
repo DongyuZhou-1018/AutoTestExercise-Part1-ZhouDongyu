@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span__general-imgcol-item-bg graph-imgbg-fff</name>
+   <tag></tag>
+   <elementGuidId>ee51e3c8-ff56-4d3f-9907-a091922a211d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/div[3]/div/div[2]/div/div[1]/a[${index}]/span</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;app&quot;)/div[@class=&quot;card-page&quot;]/div[@class=&quot;graph-result-card&quot;]/div[@class=&quot;graph-similar graph-container&quot;]/div[@class=&quot;graph-similar-list&quot;]/div[@class=&quot;general-waterfall&quot;]/div[@class=&quot;general-imgcol&quot;]/a[@class=&quot;general-imgcol-item&quot;]/span[@class=&quot;general-imgcol-item-bg graph-imgbg-fff&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a03cbcfb-970b-4747-966b-8df91e1cdeb4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-click</name>
+      <type>Main</type>
+      <value>{&quot;bt&quot;: &quot;b-img&quot;}</value>
+      <webElementGuid>62d62cef-e86e-4bf2-b00d-7f2f4efef899</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>general-imgcol-item-bg graph-imgbg-fff</value>
+      <webElementGuid>0a98f8a7-bad9-43e0-9d41-4be3bead0fb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[@class=&quot;card-page&quot;]/div[@class=&quot;graph-result-card&quot;]/div[@class=&quot;graph-similar graph-container&quot;]/div[@class=&quot;graph-similar-list&quot;]/div[@class=&quot;general-waterfall&quot;]/div[@class=&quot;general-imgcol&quot;]/a[@class=&quot;general-imgcol-item&quot;]/span[@class=&quot;general-imgcol-item-bg graph-imgbg-fff&quot;]</value>
+      <webElementGuid>36552649-ecab-4ece-bfd6-80e4fe1161d5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/div[3]/div/div[2]/div/div[1]/a[${index}]/span</value>
+      <webElementGuid>b6953e5c-044e-4c7a-bcf2-b7d5a0baecb6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[${index}]/span</value>
+      <webElementGuid>63d5b63b-f395-40ce-b02a-3c6817a6a51d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
