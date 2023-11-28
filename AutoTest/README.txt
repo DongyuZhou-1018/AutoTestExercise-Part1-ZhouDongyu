@@ -1,1 +1,2 @@
-I used Katalon Studio to implement the Auto Test of Part1, and since I have no access for Google, I used Baidu instead, Hopefully this is allowed :)
+I used Katalon Studio to implement the Auto Test of Part1, and since there is no access to Google, using Baidu instead :)
+The test script is under AutoTest\Scripts\SearchByImage\
