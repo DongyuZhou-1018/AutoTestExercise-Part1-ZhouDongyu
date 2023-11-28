@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_</name>
+   <tag></tag>
+   <elementGuidId>b78fd831-95c7-466a-9100-d64272cd9681</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='form']/div/div/span[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.soutu-url-btn.soutu-url-btn-new</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>b3461080-596a-4d20-a80c-ed5f76d7efc2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>soutu-url-btn soutu-url-btn-new</value>
+      <webElementGuid>5442a1f1-3252-49a5-a600-b0650e9bf70c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>百度一下</value>
+      <webElementGuid>d3acc7af-7c45-4692-ae59-37770d34f3d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;form&quot;)/div[@class=&quot;soutu-layer new-pmd&quot;]/div[@class=&quot;soutu-url&quot;]/span[@class=&quot;soutu-url-btn soutu-url-btn-new&quot;]</value>
+      <webElementGuid>017178fd-a2bd-442b-82a6-b7de4dd93944</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='form']/div/div/span[3]</value>
+      <webElementGuid>a99c87f3-acb8-432f-8771-678274f38202</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/following::span[3]</value>
+      <webElementGuid>92ccb61b-3745-40dd-9425-0c8c676de458</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='牛年贺岁，登录设置新春皮肤！'])[1]/following::span[3]</value>
+      <webElementGuid>a2cfdacc-e73a-4b36-b84c-f2d40da1724a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='请输入正确的图片网址'])[1]/preceding::span[1]</value>
+      <webElementGuid>f54584f1-bd17-412e-a747-9f024bf89971</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='拖拽图片到这里'])[1]/preceding::span[2]</value>
+      <webElementGuid>6618b6d2-dd7b-4856-bb65-bc5dd20c68bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='百度一下']/parent::*</value>
+      <webElementGuid>b087c4a0-08b8-4e06-b3f9-d6f7dd920cf0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/span[3]</value>
+      <webElementGuid>002f4df1-1c7a-4ad5-ada7-30b2e5d6bd90</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '百度一下' or . = '百度一下')]</value>
+      <webElementGuid>abb7c15f-f99c-4036-8f9d-fa4366b333ee</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
