@@ -23,20 +23,14 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.baidu.com/')
 
-WebUI.takeScreenshot()
-
 WebUI.click(findTestObject('Object Repository/Page_/span__soutu-btn'))
-
-WebUI.takeScreenshot()
 
 String picPath = RunConfiguration.getProjectDir() + '\\Test Cases\\testData\\cartoon.jpg'
 
 WebUI.uploadFile(findTestObject('Object Repository/Page_/input__upload-pic'), picPath)
 
-WebUI.takeScreenshot()
-
-WebUI.waitForPageLoad(10)
-
+WebUI.waitForPageLoad(30)
+sleep(3000)
 //2. get the sessionid of the original search result page
 String url = WebUI.getUrl()
 
@@ -70,7 +64,8 @@ if (searchResultTmp != '') {
 
     WebUI.click(findTestObject('Page_/span__general-imgcol-item-bg graph-imgbg-fff', [('data-index') : searchResultItem]))
 
-    WebUI.takeScreenshot()
+    timestamp = new Date().format("YYYY-MM-DD HH:mm:ss")
+	WebUI.takeScreenshot("Test Cases/testData/lastPage.png",["text":timestamp,"x":10,"y":20,"font":"Arial","fontColor":"#000000"])
 
     //5. assert sessionid is same as the original search result page to assert the search results are related to the used images
     String searchItemPageURL = WebUI.getUrl()
