@@ -6,12 +6,12 @@
    <elementGuidId>1a035587-7fb2-4916-94c3-2938c47ad507</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='app']/div/div[3]/div/div[2]/div/div[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.general-imgcol</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/div[3]/div/div[2]/div/div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>42d61051-ff22-4668-90a1-f7fb4797c2c3</webElementGuid>
+      <webElementGuid>806b3f7c-289e-43ef-bb08-eafa05daf56e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>general-imgcol</value>
-      <webElementGuid>586e49e2-2c51-4348-b9d6-407e596f20bc</webElementGuid>
+      <webElementGuid>5e9ca658-bd4b-4373-b3f6-6201d1888465</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,15 +38,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;app&quot;)/div[@class=&quot;card-page&quot;]/div[@class=&quot;graph-result-card&quot;]/div[@class=&quot;graph-similar graph-container&quot;]/div[@class=&quot;graph-similar-list&quot;]/div[@class=&quot;general-waterfall&quot;]/div[@class=&quot;general-imgcol&quot;]</value>
-      <webElementGuid>ebcd755d-1cfe-4a83-a7f0-4985274ca81c</webElementGuid>
+      <webElementGuid>54c0abd2-ea1f-4cfc-95c7-6111770eb542</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/div[3]/div/div[2]/div/div</value>
-      <webElementGuid>2a426aff-d12d-4588-8e3c-fa321d4363d3</webElementGuid>
+      <value>//div[@id='app']/div/div[3]/div/div[2]/div/div[1]</value>
+      <webElementGuid>4de0ea4e-5d4a-4902-919d-0f34b97c3594</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='相似图片'])[1]/following::div[3]</value>
-      <webElementGuid>b4cffbfd-bf9d-4232-8c87-5e4b195839a9</webElementGuid>
+      <webElementGuid>e5f96ab8-ef1d-4fed-819d-ea4d01c58b73</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='undefined'])[4]/following::div[8]</value>
-      <webElementGuid>e66dfb68-7f3d-42b9-bb83-92fbbc8d39be</webElementGuid>
+      <webElementGuid>10514cac-e498-46bc-b6d3-5e3a6cbd89c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='正在加载...'])[1]/preceding::div[5]</value>
-      <webElementGuid>ac78c78b-ca5f-4e2c-8158-29670b994cb0</webElementGuid>
+      <webElementGuid>310e487e-0997-45a4-a631-aad619e64d14</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No results :('])[1]/preceding::div[6]</value>
-      <webElementGuid>0d614036-8ff9-4ea3-8831-9d8b6eca1268</webElementGuid>
+      <webElementGuid>47f556a2-7fa4-4ace-854e-9ce4785013e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div[2]/div/div</value>
-      <webElementGuid>e6bf8bc1-a01f-44d4-96cf-9ed6c3b130d2</webElementGuid>
+      <webElementGuid>691e9646-f45e-4bc3-88da-e7e8d40805ee</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

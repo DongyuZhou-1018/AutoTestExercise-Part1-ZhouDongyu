@@ -3,19 +3,24 @@
    <description></description>
    <name>span__general-imgcol-item-bg graph-imgbg-fff</name>
    <tag></tag>
-   <elementGuidId>ee51e3c8-ff56-4d3f-9907-a091922a211d</elementGuidId>
+   <elementGuidId>45070b54-d2d3-4467-ad39-f8e4b4e895a1</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_/span__general-imgcol-item-bg graph-imgbg-fff.png</imagePath>
    <selectorCollection>
       <entry>
          <key>CSS</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='app']/div/div[3]/div/div[2]/div/div[1]/a[${index}]/span</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>id(&quot;app&quot;)/div[@class=&quot;card-page&quot;]/div[@class=&quot;graph-result-card&quot;]/div[@class=&quot;graph-similar graph-container&quot;]/div[@class=&quot;graph-similar-list&quot;]/div[@class=&quot;general-waterfall&quot;]/div[@class=&quot;general-imgcol&quot;]/a[@class=&quot;general-imgcol-item&quot;]/span[@class=&quot;general-imgcol-item-bg graph-imgbg-fff&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/div[3]/div/div[2]/div/div/a[@data-index=&quot;${data-index}&quot; and @class='general-imgcol-item']</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_/span__general-imgcol-item-bg graph-imgbg-fff.png</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -26,7 +31,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>a03cbcfb-970b-4747-966b-8df91e1cdeb4</webElementGuid>
+      <webElementGuid>3be1be51-97c8-49d2-8d46-3c2fd4952696</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +39,7 @@
       <name>data-click</name>
       <type>Main</type>
       <value>{&quot;bt&quot;: &quot;b-img&quot;}</value>
-      <webElementGuid>62d62cef-e86e-4bf2-b00d-7f2f4efef899</webElementGuid>
+      <webElementGuid>533cd596-d740-4505-ae3a-186d18c34304</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +47,7 @@
       <name>class</name>
       <type>Main</type>
       <value>general-imgcol-item-bg graph-imgbg-fff</value>
-      <webElementGuid>0a98f8a7-bad9-43e0-9d41-4be3bead0fb5</webElementGuid>
+      <webElementGuid>a52185ab-dc67-48f9-bd89-1ac9422c74d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,22 +55,22 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;app&quot;)/div[@class=&quot;card-page&quot;]/div[@class=&quot;graph-result-card&quot;]/div[@class=&quot;graph-similar graph-container&quot;]/div[@class=&quot;graph-similar-list&quot;]/div[@class=&quot;general-waterfall&quot;]/div[@class=&quot;general-imgcol&quot;]/a[@class=&quot;general-imgcol-item&quot;]/span[@class=&quot;general-imgcol-item-bg graph-imgbg-fff&quot;]</value>
-      <webElementGuid>36552649-ecab-4ece-bfd6-80e4fe1161d5</webElementGuid>
+      <webElementGuid>3955e81e-b7a3-4fef-9dbf-f055b21967ea</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/div[3]/div/div[2]/div/div[1]/a[${index}]/span</value>
-      <webElementGuid>b6953e5c-044e-4c7a-bcf2-b7d5a0baecb6</webElementGuid>
+      <value>//div[@id='app']/div/div[3]/div/div[2]/div/div/a[@data-index=&quot;${data-index}&quot; and @class='general-imgcol-item']</value>
+      <webElementGuid>bc6c311c-96c8-467b-ba5d-82699b644ced</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//a[${index}]/span</value>
-      <webElementGuid>63d5b63b-f395-40ce-b02a-3c6817a6a51d</webElementGuid>
+      <value>//a[@data-index=&quot;${data-index}&quot; and @class='general-imgcol-item']</value>
+      <webElementGuid>d086a79d-179a-4df7-ab8f-90bcf813116d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
