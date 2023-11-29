@@ -18,6 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
+//1. Open target website
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.baidu.com/')
@@ -36,34 +37,16 @@ WebUI.takeScreenshot()
 
 WebUI.waitForPageLoad(10)
 
-//get the sessionid of the original search result page
+//2. get the sessionid of the original search result page
 String url = WebUI.getUrl()
 
 WS.comment(url)
 
-String[] str = url.split('&')
+String sessionId_ori = CustomKeywords.'autotest.comm.getSessionIDFromURL'(url)
 
-String[] str2 = []
+WS.comment(sessionId_ori)
 
-String sessionId = ''
-
-for (int i = 0; i < str.length; i++) {
-    WS.comment(str[i])
-
-    str2 = (str[i]).split('=')
-
-    if ((str2[0]) == 'session_id') {
-        sessionId = (str2[1])
-
-        WS.comment(sessionId)
-
-        break
-    }
-}
-
-WS.comment(sessionId)
-
-//get specified VISITRESULT
+//3. get specified VISITRESULT from config file
 File newFile = new File('Test Cases/testData/config.txt')
 
 String searchResultTmp = newFile.text
@@ -79,15 +62,26 @@ if (searchResultTmp != '') {
 
     WS.comment(searchResultItem.toString())
 
-    //Click the sepcified item
-    WebUI.click(findTestObject('Object Repository/Page_/span__general-imgcol-item-bg graph-imgbg-fff', [('index') : searchResultItem]))
+    //4. Click the sepcified item
+//    String urlOfSepcifiedItem = WebUI.getAttribute(findTestObject('Page_/span__general-imgcol-item-bg graph-imgbg-fff', 
+//            [('data-index') : searchResultItem]), 'href')
+//
+//    WS.comment(urlOfSepcifiedItem)
+
+    WebUI.click(findTestObject('Page_/span__general-imgcol-item-bg graph-imgbg-fff', [('data-index') : searchResultItem]))
 
     WebUI.takeScreenshot()
 
-    //assert sessionid is same as the original search result page
+    //5. assert sessionid is same as the original search result page to assert the search results are related to the used images
     String searchItemPageURL = WebUI.getUrl()
 
-    WS.verifyMatch(searchItemPageURL, ('.*&session_id=' + sessionId) + '.*', true)
+    WS.comment(searchItemPageURL)
+
+    String sessionId_after = CustomKeywords.'autotest.comm.getSessionIDFromURL'(searchItemPageURL)
+
+    WS.comment(sessionId_after)
+
+    assert sessionId_after == sessionId_ori
 } else {
     WS.comment('No index specified!')
 }
